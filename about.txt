@@ -1,0 +1,42 @@
+CPC2 Insrtallation:
+AFter downlaoding the CPC2 github ,
+the CPC2.py is altered for python3. command replaced with subprocess, and also all print anything converted to print(anything).
+
+#You need to install anaconda as well in the host system. And also make the conda env (base) and then install tools in that , and then add them to path as well.
+
+
+
+✅ Solution A: Make sure tools are available in WSL's path
+In your WSL terminal, do this:
+
+bash
+Copy
+Edit
+nano ~/.bashrc
+Add this line at the bottom if not already present:
+
+bash
+Copy
+Edit
+export PATH="$HOME/anaconda3/bin:$PATH"
+Then save and run:
+
+bash
+Copy
+Edit
+source ~/.bashrc
+Now confirm tools are available by running in WSL:
+
+bash
+Copy
+Edit
+which STAR
+which stringtie
+which gffcompare
+They should point to paths like /home/divya/anaconda3/bin/STAR.
+
+✅ If all good, retry your pipeline.
+
+
+
+

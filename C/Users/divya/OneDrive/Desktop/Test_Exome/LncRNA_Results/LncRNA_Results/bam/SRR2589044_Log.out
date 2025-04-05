@@ -1,0 +1,60 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-11-25T09:14:51+0000 :/opt/conda/conda-bld/star_1732525954305/work/source
+##### Command Line:
+/home/divya/anaconda3/bin/STAR-avx2 --runThreadN 4 --genomeDir /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/ref/ --readFilesIn /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_1.fastq /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_2.fastq --readFilesCommand zcat --outSAMtype BAM SortedByCoordinate --quantMode TranscriptomeSAM --outTmpDir /tmp/star_tmp/ --outFileNamePrefix C:/Users/divya/OneDrive/Desktop/Test_Exome/LncRNA_Results/LncRNA_Results/bam/SRR2589044_
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 C:/Users/divya/OneDrive/Desktop/Test_Exome/LncRNA_Results/LncRNA_Results/bam/SRR2589044_
+outTmpDir                         /tmp/star_tmp/
+###### All USER parameters from Command Line:
+runThreadN                    4     ~RE-DEFINED
+genomeDir                     /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/ref/     ~RE-DEFINED
+readFilesIn                   /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_1.fastq   /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_2.fastq        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+quantMode                     TranscriptomeSAM        ~RE-DEFINED
+outTmpDir                     /tmp/star_tmp/     ~RE-DEFINED
+outFileNamePrefix             C:/Users/divya/OneDrive/Desktop/Test_Exome/LncRNA_Results/LncRNA_Results/bam/SRR2589044_     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        4
+genomeDir                         /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/ref/
+readFilesIn                       /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_1.fastq   /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_2.fastq   
+readFilesCommand                  zcat   
+outFileNamePrefix                 C:/Users/divya/OneDrive/Desktop/Test_Exome/LncRNA_Results/LncRNA_Results/bam/SRR2589044_
+outTmpDir                         /tmp/star_tmp/
+outSAMtype                        BAM   SortedByCoordinate   
+quantMode                         TranscriptomeSAM   
+
+-------------------------------
+##### Final effective command line:
+/home/divya/anaconda3/bin/STAR-avx2   --runThreadN 4   --genomeDir /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/ref/   --readFilesIn /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_1.fastq   /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_2.fastq      --readFilesCommand zcat      --outFileNamePrefix C:/Users/divya/OneDrive/Desktop/Test_Exome/LncRNA_Results/LncRNA_Results/bam/SRR2589044_   --outTmpDir /tmp/star_tmp/   --outSAMtype BAM   SortedByCoordinate      --quantMode TranscriptomeSAM   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rwxrwxrwx 1 divya divya 406842737 Feb  1 13:12 /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_1.fastq
+
+   readsCommandsFile:
+exec > "/tmp/star_tmp//tmp.fifo.read1"
+echo FILE 0
+zcat      "/mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_1.fastq"
+
+
+   Input read files for mate 2 :
+-rwxrwxrwx 1 divya divya 406842737 Feb  1 13:12 /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_2.fastq
+
+   readsCommandsFile:
+exec > "/tmp/star_tmp//tmp.fifo.read2"
+echo FILE 0
+zcat      "/mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/reads/SRR2589044_2.fastq"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+
+EXITING because of FATAL ERROR: could not open genome file /mnt/c/Users/divya/OneDrive/Desktop/Test_Exome/ref//genomeParameters.txt
+SOLUTION: check that the path to genome files, specified in --genomeDir is correct and the files are present, and have user read permsissions
+
+Apr 05 15:17:50 ...... FATAL ERROR, exiting
